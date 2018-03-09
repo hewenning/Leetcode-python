@@ -28,3 +28,17 @@ class Solution:
                 A[newTail] = A[i]
 
         return newTail + 1
+
+
+# 另外一种解决方案
+from collections import OrderedDict
+
+
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """ 
+        nums[:] =  OrderedDict.fromkeys(nums).keys()
+        return len(nums)
