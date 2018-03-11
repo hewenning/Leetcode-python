@@ -58,8 +58,8 @@ def isIsomorphic5(self, s, t):
 
 
 def isIsomorphic(self, s, t):
-    d1, d2 = [0 for _ in xrange(256)], [0 for _ in xrange(256)]
-    for i in xrange(len(s)):
+    d1, d2 = [0 for _ in range(256)], [0 for _ in xrange(256)]
+    for i in range(len(s)):
         if d1[ord(s[i])] != d2[ord(t[i])]:
             return False
         d1[ord(s[i])] = i + 1
