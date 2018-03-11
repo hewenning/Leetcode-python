@@ -11,6 +11,9 @@
 
 
 # 一种解决方案
+import collections
+
+
 class MyStack:
     def __init__(self):
         """
