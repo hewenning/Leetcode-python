@@ -29,7 +29,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        n -= 1
+        n = n - 1
         for digits in range(1, 11):
             first = 10**(digits - 1)
             if n < 9 * first * digits:
