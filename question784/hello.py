@@ -16,6 +16,9 @@
 
 
 # 一种解决方案
+import itertools
+
+
 class Solution:
     def letterCasePermutation(self, S):
         """
