@@ -20,6 +20,7 @@
 # The size of the given array will be in the range [1,1000].
 
 
+# 一種解決方案
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
