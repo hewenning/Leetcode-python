@@ -26,3 +26,17 @@ class Solution:
         """
         if cur == len(g) - 1: return [[len(g) - 1]]
         return [([cur] + path) for i in g[cur] for path in self.allPathsSourceTarget(g, i)]
+
+
+# 另外一种解决方案
+class Solution:
+    def allPathsSourceTarget(self, graph):
+        def dfs(cur, path):
+            if cur == len(graph) - 1:
+                res.append(path)
+            else:
+                for i in graph[cur]: dfs(i, path + [i])
+
+        res = []
+        dfs(0, [0])
+        return res
