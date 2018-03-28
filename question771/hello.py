@@ -17,3 +17,15 @@
 
 
 # 一種解決方案
+class Solution:
+    def numJewelsInStones(self, J, S):
+        """
+        :type J: str
+        :type S: str
+        :rtype: int
+        """
+        t = 0
+        for i in J:
+            a = S.count(i)
+            t = t + a
+        return t
