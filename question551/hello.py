@@ -18,3 +18,10 @@
 
 
 # 一種解決方案
+class Solution:
+    def checkRecord(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        return not re.search('A.*A|LLL', s)
