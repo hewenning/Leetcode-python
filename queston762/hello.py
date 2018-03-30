@@ -9,3 +9,6 @@
 # Example 2:
 # Input: A = 'abcde', B = 'abced'
 # Output: false
+
+
+# 一種解決方案
