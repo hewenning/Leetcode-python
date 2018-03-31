@@ -54,3 +54,12 @@ def subsets(self, nums):
     return res
 
 
+# 一行的解決方案
+def subsets(self, nums):
+    return reduce(lambda L, ele: L + [l + [ele] for l in L], nums, [[]])
+
+def subsets(self, nums):
+    [[x for x in l if x is not None] for l in itertools.product(*zip(nums, [None] * len(nums)))]
+
+def subsets(self, nums):
+    [l for n in range(len(nums) + 1) for l in itertools.combinations(nums, n)]
