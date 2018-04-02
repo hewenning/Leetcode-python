@@ -12,3 +12,37 @@
 
 
 # 一種解決方案
+class MapSum:
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.dict = {}
+
+    def insert(self, key, val):
+        """
+        :type key: str
+        :type val: int
+        :rtype: void
+        """
+        self.dict[key] = val
+
+    def sum(self, prefix):
+        """
+        :type prefix: str
+        :rtype: int
+        """
+        res = 0
+        for key in self.dict:
+            if key.startswith(prefix):
+                res += self.dict[key]
+            else:
+                continue
+        return res
+
+
+
+        # Your MapSum object will be instantiated and called as such:
+        # obj = MapSum()
+        # obj.insert(key,val)
+        # param_2 = obj.sum(prefix)
