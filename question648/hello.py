@@ -35,3 +35,6 @@ class Solution:
             return word
 
         return " ".join(map(replace, sentence.split()))
+
+
+# 另外一種解決方案
