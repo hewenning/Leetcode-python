@@ -34,3 +34,6 @@ class Solution(object):
                 left -= 1
                 right += 1
         return ans
+
+
+# 另外一种解决方案
