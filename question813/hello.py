@@ -110,4 +110,3 @@ class Solution:
             return cache[(st, k)]
         cache = {}
         return rec(0, k)
-    
