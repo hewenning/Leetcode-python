@@ -1,22 +1,87 @@
-class Solution:
-    def largestSumOfAverages(self, a, k):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: float
-        """
-        def rec(st, k):
-            if (st, k) in cache:
-                return cache[(st, k)]
-            if k == 1:
-                cache[(st, k)] = sum(a[st:])/(len(a)-st)
-                return cache[(st, k)]
-            total = 0
-            res = -math.inf
-            for i in range(st, len(a)-k+1):
-                total += a[i]
-                res = max(res, (total/(i-st+1)) + rec(i+1, k-1))
-            cache[(st, k)] = res
-            return cache[(st, k)]
-        cache = {}
-        return rec(0, k)
+We
+partition
+a
+row
+of
+numbers
+A
+into
+at
+most
+K
+adjacent(non - empty)
+groups, then
+our
+score is the
+sum
+of
+the
+average
+of
+each
+group.What is the
+largest
+score
+we
+can
+achieve?
+
+Note
+that
+our
+partition
+must
+use
+every
+number in A, and that
+scores
+are
+not necessarily
+integers.
+
+Example:
+Input:
+A = [9, 1, 2, 3, 9]
+K = 3
+Output: 20
+Explanation:
+The
+best
+choice is to
+partition
+A
+into[9], [1, 2, 3], [9].The
+answer is 9 + (1 + 2 + 3) / 3 + 9 = 20.
+We
+could
+have
+also
+partitioned
+A
+into[9, 1], [2], [3, 9],
+for example.
+    That
+    partition
+    would
+    lead
+    to
+    a
+    score
+    of
+    5 + 2 + 6 = 13, which is worse.
+
+Note:
+
+1 <= A.length <= 100.
+1 <= A[i] <= 10000.
+1 <= K <= A.length.
+Answers
+within
+10 ^ -6
+of
+the
+correct
+answer
+will
+be
+accepted as correct.
