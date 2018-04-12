@@ -18,3 +18,5 @@
 # Input: n = 3, m = 1.
 # Output: 4
 # Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].
+
+
