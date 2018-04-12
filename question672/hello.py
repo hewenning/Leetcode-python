@@ -20,4 +20,4 @@
 # Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].
 
 
-# 
+# 一种解决方案
