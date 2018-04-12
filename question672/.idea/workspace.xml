@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/hello.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+              <caret line="19" column="92" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="19" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -206,7 +206,7 @@
     <entry file="file://$PROJECT_DIR$/hello.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+          <caret line="19" column="92" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="19" selection-end-column="92" />
           <folding />
         </state>
       </provider>
