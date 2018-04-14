@@ -11,3 +11,15 @@
 
 
 # 一種解決方案
+class Solution:
+    def countBits(self, num):
+        """
+        :type num: int
+        :rtype: List[int]
+        """
+        r = [0];
+        a = 1
+        for i in range(1, num + 1):
+            r.append(r[i - a] + 1)
+            if i == 2 * a - 1: a *= 2
+        return r
