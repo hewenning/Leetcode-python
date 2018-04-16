@@ -29,3 +29,4 @@
 # k will be an integer in the range [1, 50].
 
 
+# 一種解決方案
